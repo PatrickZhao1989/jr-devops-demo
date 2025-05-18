@@ -30,7 +30,7 @@ jobs:
     - name: Deploy via Azure CLI 
       run: |
         az storage blob upload-batch \
-          --account-name jrdemohelloworld \
+          --account-name jrdevopsstorageaccount \
           --account-key ${{ secrets.AZURE_STORAGE_KEY }} \
           --destination '$web' \
           --source ./frontend/dist  \
