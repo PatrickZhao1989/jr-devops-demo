@@ -13,4 +13,10 @@ public class HelloWorldController : ControllerBase
 	{
 		return Ok("Hello JR student!");
 	}
+
+	[HttpGet("name")]
+	public IActionResult GetName(string name)
+	{
+		return Ok($"Hello {name}!");
+	}
 }
